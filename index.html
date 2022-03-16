@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Productos Store: Tienda de articulos tecnologicos, mochilas y mas. Sitio web 2022.">
+    <meta name="keywords" content="Sitio de compras de articulos, creado para desmotración de aprendizaje.">
+    <meta name="author" content="Flores Torres Martin Alexander">
+
+    <link rel="preload" href="src/img/loader.gif" as="image">
+
+    <!-- ===== BOXICONS ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- ===== CSS ===== -->
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+
+    <link rel="apple-touch-icon" href="src/img/w.png">
+    <link rel="shortcut icon" href="src/img/w.png" type="image/x-icon">
+    <link rel="preload" href="src/img/offer.jpg" as="image">
+
+    <title>Productos Store</title>
+</head>
+<body>
+    <!--===== loader =====-->
+    <div class="loader">
+        <img class="loader__gif" src="src/img/loader.gif" alt="loader">
+    </div>
+    
+    <!--===== HEADER =====-->
+
+      <header class="header-contenedor">
+        <div class="header max-width">
+            <h1 class="header__logo">White</h1>
+            <ul class="header__navegacion">
+                <i class='bx bx-x header__close'></i>
+                <li class="header__item"><a href="#inicio" class="header__enlace active">Inicio</a></li>
+                <li class="header__item"><a href="#productos" class="header__enlace">Productos</a></li>
+                <li class="header__item"><a href="#nuevo" class="header__enlace">Nuevo</a></li>
+                <li class="header__item"><a href="#suscribete" class="header__enlace">Suscribete</a></li>
+            </ul>
+            <div class="header__iconos">
+                <div class="header__cart"><i class='bx bx-cart header__ico'></i> <span class="header__indice"></span></div>
+                <div class="header__menu"><i class='bx bx-menu header__ico' ></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!--===== carrito =====-->
+    <section class="carrito">
+        <div class="carrito__top">
+            <p class="carrito__vaciar">vaciar</p>
+            <h2 class="carrito__title">Mi Carrito</h2>
+            <i class='bx bx-x carrito__close'></i>
+        </div>
+        <div class="carrito__cards">
+            <!--  -->
+        </div>
+        <div class="carrito__bottom">
+            <p class="carrito__cantidad"><span class="cantidad__producto">0</span> Productos</p>
+            <p class="carrito__total">Total: <span class="carrito__color">S/.<span class="cantidad__total">0.00</span></span></p>
+        </div>
+    </section>
+
+    <!--===== producto exitosamente notificacion =====-->
+    <div class="agregadoExitosamente">PRODUCTO AGREGADO</div>
+
+
+    <!--===== OVERLAY =====-->
+    <div class="overlay"></div>
+
+    <!--===== INICIO =====-->
+    <section class="inicio-contenedor">
+        <section class="inicio max-width" id="inicio">
+            <div class="inicio__titulo">
+                <h2 class="inicio__title">Nuevos</h2>
+                <h3 class="inicio__info">Productos</h3>
+                <a href="#" class="boton">IR DE COMPRAS</a>
+            </div>
+            <div class="inicio__imagen">
+                <img class="inicio__img" src="src/img/home.png" alt="imagen de hombre">
+            </div>
+        </section>
+    </section>
+
+    <!--===== mochila =====-->
+    <div class="mochila max-width">
+        <div class="mochila__columna">
+            <img class="mochila__img" src="src/img/backpackMan.png" alt="imagen de hombre">
+            <div class="mochila__info">
+                <h3 class="mochila__genero">Hombre</h3>
+                <h2 class="mochila__mochila">Mochila</h2>
+                <h6 class="mochila__parrafo">ver colección</h6>
+            </div>
+        </div>
+        <div class="mochila__columna">
+            <img class="mochila__img" src="src/img/backpackWoman.png" alt="imagen de mujer">
+            <div class="mochila__info">
+                <h3 class="mochila__genero">Mujer</h3>
+                <h2 class="mochila__mochila">Mochila</h2>
+                <h6 class="mochila__parrafo">ver colección</h6>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Productos =====-->
+    <section class="productos max-width" id="productos">
+       <div class="titulo">
+            <h2 class="productos__tituloInicial">Nuestros Productos</h2>
+            <h4 class="productos__parrafoInicial">Ver Todo</h4>
+       </div>
+        <div class="productos-contenedor">
+            <div class="productos__item">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/feature1.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">Audifonos color negro</h3>
+                <P class="producto__precio">S/. 30</P>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+            <div class="productos__item">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/feature2.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">Parlante color negro</h3>
+                <P class="producto__precio">S/. 30</P>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+            <div class="productos__item">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/feature3.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">Audifonos</h3>
+                <P class="producto__precio">S/. 30</P>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+            <div class="productos__item">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/feature4.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">Reloj negro oscuro</h3>
+                <P class="producto__precio">S/. 30</P>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Oferta =====-->
+    <section class="oferta-contendor">
+        <div class="oferta max-width">
+            <h2 class="oferta__title">Oferta Especial</h2>
+            <p class="oferta__parrafo">Solo por hoy aprovecha grandes descuentos</p>
+            <button class="boton agregar">COMPRAR AHORA</button>
+        </div>
+    </section>
+
+    <!--===== Nuevo =====-->
+    <section class="nuevo-contenedor max-width" id="nuevo">
+        <div class="titulo">
+            <h2 class="productos__tituloInicial">Nuevos productos</h2>
+            <h4 class="productos__parrafoInicial">Ver Todo</h4>
+       </div>
+        <div class="nuevo">
+           <div class="nuevo__contenido">
+                <img class="nuevo__img" src="src/img/new1.png" alt="nuevo producto">
+                <div class="nuevo__posicion">
+                    <a href="#" class="boton boton--tamaño">VER PRODUCTO</a>
+                </div>
+           </div>
+           <div class="nuevo__contenido">
+                <img class="nuevo__img" src="src/img/new2.png" alt="nuevo producto">
+                <div class="nuevo__posicion">
+                    <a href="#" class="boton boton--tamaño">VER PRODUCTO</a>
+                </div>
+            </div>
+
+            <div class="nuevo__contenido">
+                <img class="nuevo__img" src="src/img/new3.png" alt="nuevo producto">
+                <div class="nuevo__posicion">
+                    <a href="#" class="boton boton--tamaño">VER PRODUCTO</a>
+                </div>
+            </div>
+
+            <div class="nuevo__contenido">
+                <img class="nuevo__img" src="src/img/new4.png" alt="nuevo producto">
+                <div class="nuevo__posicion">
+                    <a href="#" class="boton boton--tamaño">VER PRODUCTO</a>
+                </div>
+            </div>
+
+            <div class="nuevo__contenido">
+                <img class="nuevo__img" src="src/img/new5.png" alt="nuevo producto">
+                <div class="nuevo__posicion">
+                    <a href="#" class="boton boton--tamaño">VER PRODUCTO</a>
+                </div>
+            </div>
+
+            <div class="nuevo__contenido">
+                <img class="nuevo__img" src="src/img/new6.png" alt="nuevo producto">
+                <div class="nuevo__posicion">
+                    <a href="#" class="boton boton--tamaño">VER PRODUCTO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Suscribete =====-->
+    <section class="suscripcion max-width" id="suscribete">
+        <div class="titulo">
+            <h2 class="productos__tituloInicial">Suscribete hoy</h2>
+            <h4 class="productos__parrafoInicial">tenemos nuevas promociones que salen diariamente</h4>
+            <form class="suscripcion__form">
+                <input class="suscripcion__input" type="email" placeholder="Email" required>
+                <button class="boton boton--formulario" type="submit">Suscribete</button>
+            </form>
+       </div>
+       <div class="suscripcion__logo">
+           <div class="suscripcion__imagen"><img class="suscripcion__img" src="src/img/logo1.png" alt="logo"></div>
+           <div class="suscripcion__imagen"><img class="suscripcion__img" src="src/img/logo2.png" alt="logo"></div>
+           <div class="suscripcion__imagen"><img class="suscripcion__img" src="src/img/logo3.png" alt="logo"></div>
+           <div class="suscripcion__imagen"><img class="suscripcion__img" src="src/img/logo4.png" alt="logo"></div>
+       </div>
+    </section>
+
+    <!--===== footer =====-->
+    <footer class="footer">
+        <div class="footer-contenedor max-width">
+            <div class="footer__columna">
+                <ul class="footer__item">
+                    <h1 class="footer__title">White</h1>
+                    <li class="footer__li"><a class="footer__link--color" href="#">Productos Store</a></li>
+                    <div class="footer__imagenes">
+                        <a href="#"><img class="footer__img" src="src/img/footerstore1.png" alt="footer imagen"></a>
+                        <a href="#"><img class="footer__img" src="src/img/footerstore2.png" alt="footer imagen"></a>
+                    </div>
+                </ul>
+                <ul class="footer__item">
+                    <h1 class="footer__title">Explorar</h1>
+                    <li class="footer__li"><a class="footer__link" href="#">Inicio</a></li>
+                    <li class="footer__li"><a class="footer__link" href="#">Productos</a></li>
+                    <li class="footer__li"><a class="footer__link" href="#">Nuevo</a></li>
+                    <li class="footer__li"><a class="footer__link" href="#">Suscribete</a></li>
+                </ul>
+                <ul class="footer__item">
+                    <h1 class="footer__title">Nuestros servicios</h1>
+                    <li class="footer__li"><a class="footer__link" href="#">Diseño UI</a></li>
+                    <li class="footer__li"><a class="footer__link" href="#">Desarrollo Web</a></li>
+                    <li class="footer__li"><a class="footer__link" href="#">Creador de Contenido</a></li>
+                    <li class="footer__li"><a class="footer__link" href="#">Programacion</a></li>
+                </ul>
+                <ul class="footer__item">
+                    <h1 class="footer__title">sigueme</h1>
+                    <div class="footer__iconos">
+                        <a href="https://web.facebook.com/garena.flores.9/" target="_blank"><i class='bx bxl-facebook-square footer__ico'></i></a>
+                        <a href="https://www.instagram.com/martin_flores_28/" target="_blank"><i class='bx bxl-instagram footer__ico'></i></a>
+                        <a href="https://github.com/MartinAlexanderFloresTorres" target="_blank"><i class='bx bxl-github footer__ico'></i></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p class="footer__parrafo">2022 copyright todo los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- js -->
+    <script src="src/js/main.js"></script>
+</body>
+</html>
