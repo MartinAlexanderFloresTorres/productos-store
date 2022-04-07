@@ -13,7 +13,7 @@
     <!-- ===== BOXICONS ===== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- ===== CSS ===== -->
-    <link rel="preload" href="src/css/styles.css" as="style">
+<!--     <link rel="preload" href="src/css/styles.css" as="style"> -->
     <link rel="stylesheet" href="src/css/styles.css">
 
     <link rel="apple-touch-icon" href="src/img/w.png">
@@ -32,7 +32,7 @@
 
       <header class="header-contenedor">
         <div class="header max-width">
-            <h1 class="header__logo">White</h1>
+            <div class="header__log"><a href="#inicio" class="header__logo">White</a></div>
             <ul class="header__navegacion">
                 <i class='bx bx-x header__close'></i>
                 <li class="header__item"><a href="#inicio" class="header__enlace active">Inicio</a></li>
@@ -59,12 +59,13 @@
         </div>
         <div class="carrito__bottom">
             <p class="carrito__cantidad"><span class="cantidad__producto">0</span> Productos</p>
-            <p class="carrito__total">Total: <span class="carrito__color">S/.<span class="cantidad__total">0.00</span></span></p>
+            <button class="carrito__pagar">Pagar</button>
+            <p class="carrito__total">Total: <span class="carrito__color">S/.<span class="cantidad__total">0</span></span></p>
         </div>
     </section>
 
     <!--===== producto exitosamente notificacion =====-->
-    <div class="agregadoExitosamente">PRODUCTO AGREGADO</div>
+    <div class="agregadoExitosamente">PRODUCTO AGREGADO <span class="indicePor">!!</span></div>
 
 
     <!--===== OVERLAY =====-->
@@ -76,7 +77,7 @@
             <div class="inicio__titulo">
                 <h2 class="inicio__title">Nuevos</h2>
                 <h3 class="inicio__info">Productos</h3>
-                <a href="#" class="boton">IR DE COMPRAS</a>
+                <a href="#productos" class="boton">IR DE COMPRAS</a>
             </div>
             <div class="inicio__imagen">
                 <img class="inicio__img" src="src/img/home.png" alt="imagen de hombre">
@@ -111,40 +112,77 @@
             <h4 class="productos__parrafoInicial">Ver Todo</h4>
        </div>
         <div class="productos-contenedor">
-            <div class="productos__item">
+            <div class="productos__item" data-id="1">
                 <div class="productos__imagen">
                     <h5 class="producto__nuevo">NUEVO</h5>
                     <img class="producto__img" src="src/img/feature1.png" alt="imagen de productos">
                 </div>
-                <h3 class="producto__nombre">Audifonos color negro</h3>
-                <P class="producto__precio">S/. 30</P>
+                <h3 class="producto__nombre">Audifonos pro</h3>
+                <p>S/. <span class="producto__precio">30</span></p>
                 <button class="boton agregar">AGREGAR</button>
             </div>
-            <div class="productos__item">
+            <div class="productos__item" data-id="2">
                 <div class="productos__imagen">
                     <h5 class="producto__nuevo">NUEVO</h5>
                     <img class="producto__img" src="src/img/feature2.png" alt="imagen de productos">
                 </div>
-                <h3 class="producto__nombre">Parlante color negro</h3>
-                <P class="producto__precio">S/. 30</P>
+                <h3 class="producto__nombre">Parlante negro</h3>
+                <p>S/. <span class="producto__precio">40</span></p>
                 <button class="boton agregar">AGREGAR</button>
             </div>
-            <div class="productos__item">
+            <div class="productos__item" data-id="3">
                 <div class="productos__imagen">
                     <h5 class="producto__nuevo">NUEVO</h5>
                     <img class="producto__img" src="src/img/feature3.png" alt="imagen de productos">
                 </div>
-                <h3 class="producto__nombre">Audifonos</h3>
-                <P class="producto__precio">S/. 30</P>
+                <h3 class="producto__nombre">Audifono bluetooth</h3>
+                <p>S/. <span class="producto__precio">50</span></p>
                 <button class="boton agregar">AGREGAR</button>
             </div>
-            <div class="productos__item">
+            <div class="productos__item" data-id="4">
                 <div class="productos__imagen">
                     <h5 class="producto__nuevo">NUEVO</h5>
                     <img class="producto__img" src="src/img/feature4.png" alt="imagen de productos">
                 </div>
-                <h3 class="producto__nombre">Reloj negro oscuro</h3>
-                <P class="producto__precio">S/. 30</P>
+                <h3 class="producto__nombre">Reloj oscuro</h3>
+                <p>S/. <span class="producto__precio">60</span></p>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+
+            <div class="productos__item" data-id="5">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/new1.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">mochila</h3>
+                <p>S/. <span class="producto__precio">90</span></p>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+            <div class="productos__item" data-id="6">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/new2.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">billetera</h3>
+                <p>S/. <span class="producto__precio">23</span></p>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+            <div class="productos__item" data-id="7">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/new3.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">gafas</h3>
+                <p>S/. <span class="producto__precio">160</span></p>
+                <button class="boton agregar">AGREGAR</button>
+            </div>
+            <div class="productos__item" data-id="8">
+                <div class="productos__imagen">
+                    <h5 class="producto__nuevo">NUEVO</h5>
+                    <img class="producto__img" src="src/img/new4.png" alt="imagen de productos">
+                </div>
+                <h3 class="producto__nombre">Reloj apple</h3>
+                <p>S/. <span class="producto__precio">360</span></p>
                 <button class="boton agregar">AGREGAR</button>
             </div>
         </div>
@@ -269,5 +307,6 @@
     </footer>
     <!-- js -->
     <script src="src/js/main.js"></script>
+    <script src="src/js/carrito.js"></script>
 </body>
 </html>
