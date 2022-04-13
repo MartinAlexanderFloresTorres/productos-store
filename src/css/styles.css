@@ -782,10 +782,12 @@ i {
 .error{
     border: 1px solid var(--naranja);
     color: var(--naranja);
+    background: #d2331e1c;
 }
 .correcto{
     border: 1px solid #22e600;
     color: #22e600;
+    background: #23e6001e;
 }
 /*===== spiner ===== */
 .sk-cube-grid {
