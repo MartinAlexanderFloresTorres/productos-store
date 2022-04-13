@@ -57,3 +57,54 @@ const scroll = () => {
     });
 };
 scroll();
+
+//===== validar formulario =====
+const formulario = document.querySelector("#formulario");
+const btnEnviar = document.querySelector("#btnEnviar");
+const email = document.querySelector("#email");
+const spinerFormulario = document.querySelector("#spinerFormulario");
+
+document.addEventListener("DOMContentLoaded", iniciarFormulario);
+
+function iniciarFormulario() {
+    formulario.addEventListener("submit", enviarFormulario);
+}
+function mensaje(texto, clase) {
+    const parrafo = document.createElement("P");
+    parrafo.textContent = texto;
+    parrafo.classList.add(clase);
+    const parrafoMensaje = document.querySelectorAll(`.${clase}`);
+    if (parrafoMensaje.length === 0) {
+        formulario.appendChild(parrafo);
+    }
+}
+function enviarFormulario(e) {
+    e.preventDefault();
+    const er =  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (er.test(email.value)) {
+        email.style.display = "none";
+        btnEnviar.style.display = "none";
+        spinerFormulario.style.display = "block";
+        const parrafoMensaje = document.querySelector(".error");
+        if(parrafoMensaje){
+            parrafoMensaje.remove()
+        }
+        setTimeout(() => {
+            spinerFormulario.style.display = "none";
+            mensaje("Datos enviados correctamente", "correcto");
+            const parrafoMensaje = document.querySelector(".correcto");
+            setTimeout(() => {
+                email.style.display = "block";
+                btnEnviar.style.display = "block";
+                formulario.reset();
+                parrafoMensaje.remove();
+            }, 2500);
+        }, 2500);
+    } else {
+        mensaje("Email no valido", "error");
+        const parrafoMensaje = document.querySelector(".error");
+        setTimeout(() => {
+            parrafoMensaje.remove();
+        }, 2500);
+    }
+}
